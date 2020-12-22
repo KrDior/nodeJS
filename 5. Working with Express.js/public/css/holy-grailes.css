@@ -1,0 +1,42 @@
+.container {
+	display: grid;
+	grid-template: auto 1fr auto / auto 1fr auto;
+	height: 100vh;
+}
+
+.header {
+	background-color: blueviolet;
+	padding: 2rem;
+	grid-column: 1/4;
+}
+
+.left {
+	background-color: rgb(100, 235, 21);
+	grid-column: 1/2;
+}
+
+.main {
+	background-color: rgb(29, 208, 240);
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.elem:nth-child(n+1) {
+	background-color: rgb(245, 241, 16);
+	border-radius: 10%;
+}
+
+.elem:nth-child(n) {
+	background-color: rgb(201, 8, 40);
+	border-radius: 10%;
+}
+
+.right {
+	background-color: rgb(195, 43, 226);
+}
+
+.footer {
+	background-color: rgb(241, 78, 28);
+	grid-column: 1/4;
+}
